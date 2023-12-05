@@ -86,7 +86,7 @@
                             echo "<div class='row user_review'>";
                             echo "<div class='col-sm-12 col-md-3 image-container'>";
                             echo "   <img src='img/avatar.png' style='max-width:130px;'/>";
-                            echo "   <p><b>User</b></p>";
+                            echo "   <p><b>{$row['nickname']}</b></p>";
                             echo "</div>";
                             echo "<div class='col-sm-12 col-md-9 pt-3'>";
                             echo "    <h6>{$row['reviewTitle']} <img src='img/star.png' class='starIcon'/> {$row['reviewScore']}</h6></b>";
