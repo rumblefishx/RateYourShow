@@ -24,10 +24,9 @@
 
 
     if($stmt->execute()) {
-        $stmt->store_result(); // Store result to ensure all data is fetched
-        $stmt->free_result();  // Free the result to clear it from memory
+        $stmt->store_result();
+        $stmt->free_result();
     
-        // Now you can proceed to fetch the output parameter
         $stmt->next_result();
         $result = $conn->query("SELECT @ResultOp AS ResultOp");
         $row = $result->fetch_assoc();
