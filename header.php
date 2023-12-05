@@ -34,7 +34,7 @@
                            <?php    
                                session_start();  
                               if (isset($_SESSION['nickname']) && strlen($_SESSION['nickname']) > 1) {
-                                 echo '<li><a class="dropdown-item" href="addrating.php"><i class="fa-regular fa-star" style="color: #000000;"></i> My Ratings</a></li>';
+                                 echo '<li><a class="dropdown-item" href="#"><i class="fa-regular fa-star" style="color: #000000;"></i> My Ratings</a></li>';
                                  echo '<li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#logoutModal" href="#"><i class="fa-solid fa-right-from-bracket" style="color: #000000;"></i> Logout</a></li>';
                                } else {                               
                                  echo '<li><a class="dropdown-item" href="login.php"><i class="fa-solid fa-key" style="color: #000000;"></i> Login</a></li>';
@@ -47,9 +47,6 @@
 
                      <li class="nav-item" >
                         <a class="nav-link active" aria-current="page" href="index.php"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="faq.php"><i class="fa-solid fa-question" style="color: #ffffff;"></i> FAQ</a>
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
